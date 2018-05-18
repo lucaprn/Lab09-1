@@ -17,6 +17,14 @@ public class Fermata {
 	public Fermata(int idFermata) {
 		this.idFermata = idFermata;
 	}
+	
+	
+
+	public Fermata(Fermata f) {
+		this.idFermata=f.getIdFermata();
+		this.nome=f.getNome();
+		this.coords=f.getCoords();
+	}
 
 	public int getIdFermata() {
 		return idFermata;
